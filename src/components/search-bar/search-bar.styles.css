@@ -1,3 +1,4 @@
+
 .search-title-container{
     display: flex;
     flex-direction: column;
@@ -45,4 +46,9 @@
     font-size: 20px;
     border: none;
     cursor: pointer;
+}
+
+.container .itemsContainer {
+    max-width: 780px;
+    margin: 0 auto;
 }

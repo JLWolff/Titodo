@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Route exact path='/' component={HomePage} />
+      <Route exact path='https://JLWolff.github.io/Titodo/' component={HomePage} />
     </div>
   );
 }

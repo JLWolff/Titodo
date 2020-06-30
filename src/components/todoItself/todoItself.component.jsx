@@ -10,11 +10,13 @@ const TodoItself = ({item, handleRemove, handleEdit, i, editTodo, handleEditOut 
             editTodo === item.id ?
             <div className="itself-container">
                 <div className="todoText">
+                    <h3>
                     <input defaultValue={item.text} onChange={(e) => handleEdit(e, i, item)} />
+                    </h3>
                 </div>
                 <div className="edit-and-remove">
-                    <FiX onClick={() => handleRemove(i)} />
-                    <FiSave onClick={() => handleEditOut(i)} />
+                    <FiSave className="icons" onClick={() => handleEditOut(i)} />
+                    <FiX className="icons"  onClick={() => handleRemove(i)} />
                 </div>
             </div>    
             :
@@ -23,8 +25,8 @@ const TodoItself = ({item, handleRemove, handleEdit, i, editTodo, handleEditOut 
                     <h3>{item.text}</h3>
                 </div>
                 <div className="edit-and-remove">
-                    <FiX onClick={() => handleRemove(i)} />
-                    <FiEdit onClick={(e) => handleEdit(e, i, item)} />
+                    <FiEdit className="icons" onClick={(e) => handleEdit(e, i, item)} />
+                    <FiX className="icons" onClick={() => handleRemove(i)} />
                 </div>
             </div>      
         }

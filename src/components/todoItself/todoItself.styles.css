@@ -1,0 +1,17 @@
+.itself-container{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 6px -6px black;
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.itself-container .edit-and-remove{
+    margin: 5px;
+}
+
+.icons{
+    cursor: pointer;
+}
